@@ -7,11 +7,11 @@
 
 # Basic provisioning example
 - ec2:
-    key_name: mykey
+    key_name: 7165-2307-6871-keypair.ppk
     instance_type: t2.micro
-    image: ami-123456
+    image: ami-9abea4fb
     wait: yes
     group: webserver
-    count: 3
-    vpc_subnet_id: subnet-29e63245
+    count: 1
+    vpc_subnet_id: subnet-da629cbf
     assign_public_ip: yes
