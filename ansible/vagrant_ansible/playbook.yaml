@@ -1,5 +1,5 @@
 ---
-- hosts: 
+#- hosts: 
 # Example from Ansible Playbooks
 #- copy: src=/etc/tower/ dest=/etc/foo.conf owner=foo group=foo mode=0644
 
