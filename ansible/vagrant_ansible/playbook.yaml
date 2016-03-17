@@ -1,0 +1,17 @@
+---
+- hosts: 
+# Example from Ansible Playbooks
+#- copy: src=/etc/tower/ dest=/etc/foo.conf owner=foo group=foo mode=0644
+
+# Note: These examples do not set authentication details, see the AWS Guide for details.
+
+# Basic provisioning example
+- ec2:
+    key_name: mykey
+    instance_type: t2.micro
+    image: ami-123456
+    wait: yes
+    group: webserver
+    count: 3
+    vpc_subnet_id: subnet-29e63245
+    assign_public_ip: yes
